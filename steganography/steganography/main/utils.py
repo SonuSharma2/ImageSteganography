@@ -32,6 +32,6 @@ def send_mail(email: str, image_name: str):
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('sonushar059@gmail.com', 'Pocophone@28')
+    server.login('sonushar059@gmail.com', 'Password')
     server.sendmail("sonushar059@gmail.com", email, message.as_string())
     server.quit()
